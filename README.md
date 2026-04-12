@@ -1,0 +1,2 @@
+# gotpl
+Golang service template
