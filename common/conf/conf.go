@@ -37,18 +37,6 @@ var (
 	Cookie struct {
 		Expires int
 	}
-
-	// Wechat 微信信息
-	Wechat struct {
-		AppID     string `mapstructure:"app_id"`
-		AppSecret string `mapstructure:"app_secret"`
-	}
-
-	// Douyin 抖音信息
-	Douyin struct {
-		AppID     string `mapstructure:"app_id"`
-		AppSecret string `mapstructure:"app_secret"`
-	}
 )
 
 var addr = map[string]any{
@@ -59,7 +47,6 @@ var addr = map[string]any{
 	"db":        &DB,
 	"db.config": &DB.Config,
 	"cookie":    &Cookie,
-	"wechat":    &Wechat,
 }
 
 func unmarshal() (err error) {

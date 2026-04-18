@@ -18,22 +18,9 @@ db:
   # 数据库文件
   dialect: "sqlite3"
   # 数据库参数
-  args: "./igame.db?charset=utf8"
-
-wechat:
-  app_id: "wxf47f5f07f7a6c023"
-  app_secret: "10744ec169ff2cbd794a1f1a9738e035"
-
-# 用户配置
-user:
-  - username: "admin"
-    password: "386143717"
+  args: "./gotpl.db?charset=utf8"
 
 # 会话配置
 cookie:
   # 过期时间，单位秒
   expires: 1800
-
-# 存储配置
-storage:
-  path: "./storage"
